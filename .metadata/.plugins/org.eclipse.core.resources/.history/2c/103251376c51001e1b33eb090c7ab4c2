@@ -1,0 +1,11 @@
+import jmetal.problems.Schaffer;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Schaffer problem = new Schaffer("Real");
+		problem.evaluate(null);
+	}
+
+}

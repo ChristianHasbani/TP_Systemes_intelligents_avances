@@ -1,0 +1,19 @@
+import jmetal.core.Solution;
+import jmetal.problems.Schaffer;
+import jmetal.util.JMException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Schaffer problem = new Schaffer("Real");
+		Solution s = new Solution();
+		try {
+			problem.evaluate(null);
+		} catch (JMException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

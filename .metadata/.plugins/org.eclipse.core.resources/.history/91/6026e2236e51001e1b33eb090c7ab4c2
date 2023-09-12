@@ -3,10 +3,9 @@ import jmetal.core.Solution;
 import jmetal.core.Variable;
 import jmetal.encodings.solutionType.RealSolutionType;
 
-//Exercise 2
-public class Schaffer extends Problem{ // Part 1 create a class that inherets problem
+public class Schaffer extends Problem{
 
-	public Schaffer(String solutionType) { // Part 2 define a constructor 
+	public Schaffer(String solutionType) {
 		numberOfVariables_ = 30;
 		numberOfObjectives_ = 1;
 		numberOfConstraints_ = 0;
