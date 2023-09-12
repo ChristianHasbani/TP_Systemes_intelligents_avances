@@ -1,0 +1,36 @@
+import javax.management.JMException;
+
+import jmetal.core.Solution;
+import jmetal.core.Variable;
+import jmetal.encodings.solutionType.RealSolutionType;
+
+public class Problem{
+	
+	private Integer numberOfVariables_;
+	private int numberOfObjectives_;
+	private int numberOfConstraints_;
+	private String problemName_;
+	private RealSolutionType solutionType_;
+
+	public Problem(String solutionType, Integer numberOfVariables) {
+		numberOfVariables_ = numberOfVariables;
+		numberOfObjectives_ = 1;
+		numberOfConstraints_ = 0;
+		problemName_ = "Schaffer";
+		
+		if(solutionType.compareTo("Real") == 0) {
+			solutionType_ = new RealSolutionType(this);
+		}
+	}
+	
+	public void evalaute(Solution solution) throws JMException, jmetal.util.JMException{
+		Variable[] decisionVariables = solution.getDecisionVariables();
+		double [] x = new double [numberOfVariables_];
+		
+		for(int i = 0; i < numberOfVariables_; i++) {
+			x[i] = decisionVariables[i].getValue();
+		}
+		double f = 0.0;
+		solution.setObjective(0, f);
+	}
+}

@@ -1,0 +1,10 @@
+import javax.management.JMException;
+
+public class example {
+
+	public void evalaute(Solution solution) throws JMException{
+			
+	}
+
+
+}

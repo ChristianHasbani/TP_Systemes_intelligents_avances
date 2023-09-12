@@ -1,0 +1,20 @@
+import javax.management.JMException;
+
+import jmetal.core.Solution;
+import jmetal.core.Variable;
+
+public class example {
+
+	public void evalaute(Solution solution) throws JMException{
+			
+		Variable[] decisionVariables = solution.getDecisionVariables();
+		int numberOfVariables_;
+		double [] x = new double [numberOfVariables_];
+		
+		for(int i = 0; i < numberOfVariables_; i++) {
+			
+		}
+	}
+
+
+}

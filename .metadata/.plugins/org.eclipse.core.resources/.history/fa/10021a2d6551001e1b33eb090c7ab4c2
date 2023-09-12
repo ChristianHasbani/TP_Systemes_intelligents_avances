@@ -1,0 +1,12 @@
+import javax.management.JMException;
+
+import jmetal.core.Solution;
+
+public class example {
+
+	public void evalaute(Solution solution) throws JMException{
+			Solution
+	}
+
+
+}
