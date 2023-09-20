@@ -7,9 +7,9 @@ import jmetal.encodings.solutionType.RealSolutionType;
 import java.lang.Math;
 
 //Exercise 2
-public class TP1 extends Problem{ // Part 1 create a class that inherets problem
+public class TP1_Exercise2 extends Problem{ // Part 1 create a class that inherets problem
 
-	public TP1(String solutionType, int numberOfVariables ) { // Part 2 define a constructor 
+	public TP1_Exercise2(String solutionType, int numberOfVariables ) { // Part 2 define a constructor 
 		numberOfVariables_ = numberOfVariables;
 		numberOfObjectives_ = 1;
 		numberOfConstraints_ = 0;
