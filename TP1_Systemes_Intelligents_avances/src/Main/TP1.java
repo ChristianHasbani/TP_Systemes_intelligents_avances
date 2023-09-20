@@ -1,3 +1,5 @@
+package Main;
+
 import jmetal.core.Problem;
 import jmetal.core.Solution;
 import jmetal.core.Variable;
@@ -7,8 +9,8 @@ import java.lang.Math;
 //Exercise 2
 public class TP1 extends Problem{ // Part 1 create a class that inherets problem
 
-	public TP1(String solutionType) { // Part 2 define a constructor 
-		numberOfVariables_ = 30;
+	public TP1(String solutionType, int numberOfVariables ) { // Part 2 define a constructor 
+		numberOfVariables_ = numberOfVariables;
 		numberOfObjectives_ = 1;
 		numberOfConstraints_ = 0;
 		problemName_ = "Schaffer";
@@ -48,6 +50,7 @@ public class TP1 extends Problem{ // Part 1 create a class that inherets problem
 		}
 		g = 1 + 9 * g/(numberOfVariables_-1); 
 		f2 = g * (1- Math.sqrt(f1/g));
+		
 		double alpha = 1.0;
 		double beta = 1.0;
 		double f = alpha*f1+beta*f2; // Function F(x)

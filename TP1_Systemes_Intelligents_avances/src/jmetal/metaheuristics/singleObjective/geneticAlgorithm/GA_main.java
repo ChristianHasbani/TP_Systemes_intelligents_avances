@@ -33,6 +33,8 @@ import jmetal.util.JMException;
 
 import java.util.HashMap;
 
+import Main.TP1;
+
 /**
  * This class runs a single-objective genetic algorithm (GA). The GA can be 
  * a steady-state GA (class ssGA), a generational GA (class gGA), a synchronous
@@ -52,7 +54,9 @@ public class GA_main {
     HashMap  parameters ; // Operator parameters
 
     int bits = 512 ;
-    problem = new OneMax("Binary", bits);
+//    problem = new OneMax("Binary", bits);
+    problem= new TP1("Real",30);
+    
  
     //problem = new Sphere("Real", 10) ;
     //problem = new Easom("Real") ;
@@ -66,7 +70,7 @@ public class GA_main {
     /* Algorithm parameters*/
     algorithm.setInputParameter("populationSize",100);
     algorithm.setInputParameter("maxEvaluations", 25000);
-    /*
+
     // Mutation and Crossover for Real codification 
     parameters = new HashMap() ;
     parameters.put("probability", 0.9) ;
@@ -77,9 +81,10 @@ public class GA_main {
     parameters.put("probability", 1.0/problem.getNumberOfVariables()) ;
     parameters.put("distributionIndex", 20.0) ;
     mutation = MutationFactory.getMutationOperator("PolynomialMutation", parameters);                    
-    */
+
     
     // Mutation and Crossover for Binary codification 
+    /*
     parameters = new HashMap() ;
     parameters.put("probability", 0.9) ;
     crossover = CrossoverFactory.getCrossoverOperator("SinglePointCrossover", parameters);                   
@@ -87,7 +92,7 @@ public class GA_main {
     parameters = new HashMap() ;
     parameters.put("probability", 1.0/bits) ;
     mutation = MutationFactory.getMutationOperator("BitFlipMutation", parameters);                    
-    
+    */
     /* Selection Operator */
     parameters = null ;
     selection = SelectionFactory.getSelectionOperator("BinaryTournament", parameters) ;                            
