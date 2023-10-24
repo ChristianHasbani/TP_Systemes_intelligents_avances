@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-data_file = "TP_Systemes_intelligents_avances\TP1_Systemes_Intelligents_avances\FUN"
+data_file = "FUN"
 x =[]
 y = []
 with open(data_file,"r") as file:

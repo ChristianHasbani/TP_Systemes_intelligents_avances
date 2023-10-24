@@ -39,6 +39,8 @@ import java.util.HashMap;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 
+import Main.TP1_Exercise3;
+
 /** 
  * Class to configure and execute the NSGA-II algorithm.  
  *     
@@ -98,7 +100,8 @@ public class NSGAII_main {
       //problem = new Kursawe("Real", 3);
       //problem = new Kursawe("BinaryReal", 3);
       //problem = new Water("Real");
-      problem = new ZDT3("ArrayReal", 30);
+//      problem = new ZDT3("ArrayReal", 30);
+    	problem = new TP1_Exercise3("Real",30);
       //problem = new ConstrEx("Real");
       //problem = new DTLZ1("Real");
       //problem = new OKA2("Real") ;
