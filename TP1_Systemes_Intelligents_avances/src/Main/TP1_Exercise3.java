@@ -9,7 +9,6 @@ import java.lang.Math;
 //Exercise 2
 public class TP1_Exercise3 extends Problem{ 
 
-	double alpha,beta;
 	public TP1_Exercise3(String solutionType, int numberOfVariables ) { 
 		numberOfVariables_ = numberOfVariables;
 		numberOfObjectives_ = 2;

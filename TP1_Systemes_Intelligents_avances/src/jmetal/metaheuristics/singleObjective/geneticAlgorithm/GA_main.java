@@ -58,10 +58,10 @@ public class GA_main {
 //    problem = new OneMax("Binary", bits);
 
     //    Exercise 2
-//    problem= new TP1_Exercise2("Real",30);
+    problem= new TP1_Exercise2("Real",30);
     
 //    Exercise 3
-    problem = new TP1_Exercise3("Real",30);
+//    problem = new TP1_Exercise3("Real",30);
     
  
     //problem = new Sphere("Real", 10) ;

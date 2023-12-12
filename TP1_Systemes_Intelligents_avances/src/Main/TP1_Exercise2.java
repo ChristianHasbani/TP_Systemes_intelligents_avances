@@ -51,8 +51,8 @@ public class TP1_Exercise2 extends Problem{ // Part 1 create a class that inhere
 		g = 1 + 9 * g/(numberOfVariables_-1); 
 		f2 = g * (1- Math.sqrt(f1/g));
 		
-		double alpha = 1.0;
-		double beta = 1.0;
+		double alpha = 0.4;
+		double beta = 0.1;
 		double f = alpha*f1+beta*f2; // Function F(x)
 		
 		solution.setObjective(0, f);
