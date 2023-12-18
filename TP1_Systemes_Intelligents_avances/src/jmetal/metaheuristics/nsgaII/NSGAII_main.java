@@ -121,7 +121,7 @@ public class NSGAII_main {
 	  	targets[9] = 10.0;
 	  	targets[10] = 15.0;
 	  	targets[11] = 95.0;
-	  	problem = new TP2_SensorDeploymentProblem("Real", 10, 10.0,100.0,targets);
+	  	problem = new TP2_SensorDeploymentProblem("Real", 5, 10.0,100.0,targets);
     } // else
     
     algorithm = new NSGAII(problem);

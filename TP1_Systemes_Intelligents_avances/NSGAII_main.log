@@ -2,21 +2,21 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-12-18T10:39:39.091415100Z</date>
-  <millis>1702895979091</millis>
-  <nanos>415100</nanos>
+  <date>2023-12-18T10:59:11.267759500Z</date>
+  <millis>1702897151267</millis>
+  <nanos>759500</nanos>
   <sequence>0</sequence>
   <logger>jMetal</logger>
   <level>INFO</level>
   <class>jmetal.metaheuristics.nsgaII.NSGAII_main</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Total execution time: 296ms</message>
+  <message>Total execution time: 4429ms</message>
 </record>
 <record>
-  <date>2023-12-18T10:39:39.200508100Z</date>
-  <millis>1702895979200</millis>
-  <nanos>508100</nanos>
+  <date>2023-12-18T10:59:11.343218900Z</date>
+  <millis>1702897151343</millis>
+  <nanos>218900</nanos>
   <sequence>1</sequence>
   <logger>jMetal</logger>
   <level>INFO</level>
@@ -26,9 +26,9 @@
   <message>Variables values have been writen to file VAR</message>
 </record>
 <record>
-  <date>2023-12-18T10:39:39.207826400Z</date>
-  <millis>1702895979207</millis>
-  <nanos>826400</nanos>
+  <date>2023-12-18T10:59:11.347726Z</date>
+  <millis>1702897151347</millis>
+  <nanos>726000</nanos>
   <sequence>2</sequence>
   <logger>jMetal</logger>
   <level>INFO</level>
