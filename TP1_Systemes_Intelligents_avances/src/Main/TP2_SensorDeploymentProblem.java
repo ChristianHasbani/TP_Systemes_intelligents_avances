@@ -89,5 +89,6 @@ public class TP2_SensorDeploymentProblem extends Problem{
 	        f2 = -1 * calculateF2(t);
 	        solution.setObjective(0, f1);
 	        solution.setObjective(1, f2);
+			
 		}
 }
