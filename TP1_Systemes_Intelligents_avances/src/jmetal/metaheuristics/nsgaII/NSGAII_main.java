@@ -40,6 +40,7 @@ import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 
 import Main.TP1_Exercise3;
+import Main.TP2_SensorDeploymentProblem;
 
 /** 
  * Class to configure and execute the NSGA-II algorithm.  
@@ -101,10 +102,26 @@ public class NSGAII_main {
       //problem = new Kursawe("BinaryReal", 3);
       //problem = new Water("Real");
 //      problem = new ZDT3("ArrayReal", 30);
-    	problem = new TP1_Exercise3("Real",30);
+//    	problem = new TP1_Exercise3("Real",30);
       //problem = new ConstrEx("Real");
       //problem = new DTLZ1("Real");
       //problem = new OKA2("Real") ;
+
+	//      TP2
+	  	double [] targets = new double [12];
+	  	targets[0] = 50.0;
+	  	targets[1] = 50.0;
+	  	targets[2] = 41.0;
+	  	targets[3] = 50.0;
+	  	targets[4] = 90.0;
+	  	targets[5] = 90.0;
+	  	targets[6] = 86.0;
+	  	targets[7] = 89.0;
+	  	targets[8] = 10.0;
+	  	targets[9] = 10.0;
+	  	targets[10] = 15.0;
+	  	targets[11] = 95.0;
+	  	problem = new TP2_SensorDeploymentProblem("Real", 10, 10.0,100.0,targets);
     } // else
     
     algorithm = new NSGAII(problem);

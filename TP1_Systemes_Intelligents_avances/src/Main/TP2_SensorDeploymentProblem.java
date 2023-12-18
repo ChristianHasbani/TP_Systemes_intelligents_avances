@@ -8,10 +8,10 @@ import jmetal.util.JMException;
 
 public class TP2_SensorDeploymentProblem extends Problem{
 	
-		double radius,dimension;
-		double targets [];
+		double  radius,dimension;
+		double []targets;
 
-		public TP2_SensorDeploymentProblem(String solutionType, int numberOfSensors, double radius, double dimension, double targers []) { 
+		public TP2_SensorDeploymentProblem(String solutionType, int numberOfSensors, double radius, double dimension, double []targets) { 
 			numberOfVariables_ = numberOfSensors * 2;
 			numberOfObjectives_ = 2;
 			numberOfConstraints_ = 1;
@@ -33,12 +33,12 @@ public class TP2_SensorDeploymentProblem extends Problem{
 			
 			for(int i = 0 ; i < numberOfVariables_; i++) {
 				lowerLimit_[i] = 0.0;
-				upperLimit_[i] = 1.0;
+				upperLimit_[i] = this.dimension;
 			}
 		}
 		
 		// Method to calculate function f1
-		public int calcualteF1(int[] t) {
+		public int calculateF1(int[] t) {
 			int f1 = 0;
 			for (int i = 0; i < t.length; i++){
 				if (t[i] > 0) {
@@ -85,8 +85,7 @@ public class TP2_SensorDeploymentProblem extends Problem{
 			int [] t  = new int[this.targets.length / 2];
 			
 			calculateDistance(decisionVariables, counter, distance, t);
-			
-	        f1 = -1 * calcualteF1(t);
+	        f1 = -1 * calculateF1(t);
 	        f2 = -1 * calculateF2(t);
 	        solution.setObjective(0, f1);
 	        solution.setObjective(1, f2);
